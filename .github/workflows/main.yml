@@ -1,6 +1,8 @@
 name: Run SonarQube with Maven
 
 on: push
+permissions:
+  issues: write  # This allows the workflow to create issues
 
 jobs:
   build:
